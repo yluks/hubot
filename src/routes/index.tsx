@@ -27,21 +27,18 @@ import {
   Linkedin,
   Youtube,
 } from "lucide-react";
-import hubotWhite from "@/assets/hubot-white.png.asset.json";
-import videoHubotMultiplos from "@/assets/Video_Hubot_-_Multiplos.mp4.asset.json";
-import videoHubotKanban from "@/assets/Video_Hubot_Kanban.mp4.asset.json";
-import videoHubotTelaGeral from "@/assets/Video_Hubot_-_tela_geral_1.mp4.asset.json";
-import logoAmigotech from "@/assets/logos/amigotech.png.asset.json";
-import logoBiosystems from "@/assets/logos/biosystems.png.asset.json";
-import logoAsa from "@/assets/logos/asa.png.asset.json";
-import logoAutonorte from "@/assets/logos/autonorte.png.asset.json";
-import logoCapetro from "@/assets/logos/capetro.png.asset.json";
-import logoBokus from "@/assets/logos/bokus.png.asset.json";
-import logoGrauTecnico from "@/assets/logos/grautecnico.png.asset.json";
-import logoMauricea from "@/assets/logos/mauricea.png.asset.json";
-import logoRmPolimeros from "@/assets/logos/rmpolimeros.png.asset.json";
-import logoDamaq from "@/assets/logos/damaq.png.asset.json";
-import hubotBlack from "@/assets/hubot-black.png.asset.json";
+import hubotWhite from "@/assets/hubot-white.png";
+import videoHubotMultiplos from "@/assets/Video_Hubot_-_Multiplos.mp4";
+import videoHubotKanban from "@/assets/Video_Hubot_Kanban.mp4";
+import videoHubotTelaGeral from "@/assets/Video_Hubot_-_tela_geral_1.mp4";
+import logoAmigotech from "@/assets/logos/amigotech.png";
+import logoBiosystems from "@/assets/logos/biosystems.png";
+import logoAsa from "@/assets/logos/asa.png";
+import logoAutonorte from "@/assets/logos/autonorte.png";
+import logoCapetro from "@/assets/logos/capetro.png";
+import logoBokus from "@/assets/logos/bokus.png";
+import logoGrauTecnico from "@/assets/logos/grautecnico.png";
+import hubotBlack from "@/assets/hubot-black.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,7 +105,7 @@ function Navbar() {
           className="flex items-center shrink-0"
           aria-label="HUBOT"
         >
-          <img src={hubotWhite.url} alt="HUBOT" className="h-36 md:h-44 w-auto -my-10" />
+          <img src={hubotWhite} alt="HUBOT" className="h-36 md:h-44 w-auto -my-10" />
         </a>
         <ul className="hidden md:flex items-center gap-10 lg:gap-12">
           {links.map((l) => (
@@ -277,16 +274,13 @@ function Hero() {
 /* -------------------- SOCIAL PROOF -------------------- */
 function SocialProof() {
   const logos: { name: string; src?: string }[] = [
-    { name: "Amigotech", src: logoAmigotech.url },
-    { name: "BioSystems", src: logoBiosystems.url },
-    { name: "Asa Rent a Car", src: logoAsa.url },
-    { name: "Autonorte", src: logoAutonorte.url },
-    { name: "Capetro", src: logoCapetro.url },
-    { name: "Boku's", src: logoBokus.url },
-    { name: "Grau Técnico", src: logoGrauTecnico.url },
-    { name: "Mauricea", src: logoMauricea.url },
-    { name: "RM Polímeros", src: logoRmPolimeros.url },
-    { name: "Damaq Equipamentos", src: logoDamaq.url },
+    { name: "Amigotech", src: logoAmigotech },
+    { name: "BioSystems", src: logoBiosystems },
+    { name: "Asa Rent a Car", src: logoAsa },
+    { name: "Autonorte", src: logoAutonorte },
+    { name: "Capetro", src: logoCapetro },
+    { name: "Boku's", src: logoBokus },
+    { name: "Grau Técnico", src: logoGrauTecnico },
   ];
 
   const renderLogo = (l: { name: string; src?: string }, i: number) =>
@@ -482,7 +476,7 @@ function FeatureZ1() {
           transition={{ duration: 0.7, ease: easeOut }}
         >
           <video
-            src={videoHubotMultiplos.url}
+            src={videoHubotMultiplos}
             autoPlay
             loop
             muted
@@ -626,7 +620,7 @@ function FeatureZ3() {
           transition={{ duration: 0.7, ease: easeOut }}
         >
           <video
-            src={videoHubotKanban.url}
+            src={videoHubotKanban}
             autoPlay
             loop
             muted
@@ -741,7 +735,7 @@ function DemoLead() {
           </p>
           <div id="video" className="relative mt-8 rounded-2xl shadow-2xl overflow-hidden">
             <video
-              src={videoHubotTelaGeral.url}
+              src={videoHubotTelaGeral}
               autoPlay
               loop
               muted
@@ -1025,7 +1019,7 @@ function Footer() {
           <div className="grid gap-10 md:grid-cols-3 items-start">
             <div className="flex flex-col items-start justify-start">
               <a href="#top" className="flex items-center" aria-label="HUBOT">
-                <img src={hubotBlack.url} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
+                <img src={hubotBlack} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
               </a>
               <p className="mt-4 text-sm leading-relaxed text-gray-700">
                 {"\n"}

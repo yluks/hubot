@@ -9,7 +9,7 @@ import {
   Linkedin,
   ArrowLeft,
 } from "lucide-react";
-import hubotBlack from "@/assets/hubot-black.png.asset.json";
+import hubotBlack from "@/assets/hubot-black.png";
 
 export const Route = createFileRoute("/termos-de-uso")({
   head: () => ({
@@ -206,7 +206,7 @@ function Footer() {
           <div className="grid gap-10 md:grid-cols-3 items-start">
             <div className="flex flex-col items-start justify-start">
               <a href="#top" className="flex items-center" aria-label="HUBOT">
-                <img src={hubotBlack.url} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
+                <img src={hubotBlack} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
               </a>
               <p className="mt-4 text-sm leading-relaxed text-gray-700">{"\n"}</p>
             </div>

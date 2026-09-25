@@ -10,8 +10,8 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "lucide-react";
-import hubotBlack from "@/assets/hubot-black.png.asset.json";
-import videoHubotTelaGeral from "@/assets/Video_Hubot_-_tela_geral_1.mp4.asset.json";
+import hubotBlack from "@/assets/hubot-black.png";
+import videoHubotTelaGeral from "@/assets/Video_Hubot_-_tela_geral_1.mp4";
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
@@ -105,7 +105,7 @@ function Demonstracao() {
           >
             <div className="relative rounded-2xl shadow-2xl overflow-hidden aspect-video bg-black">
               <video
-                src={videoHubotTelaGeral.url}
+                src={videoHubotTelaGeral}
                 autoPlay
                 loop
                 muted
@@ -230,7 +230,7 @@ function Footer() {
           <div className="grid gap-10 md:grid-cols-3 items-start">
             <div className="flex flex-col items-start justify-start">
               <Link to="/" className="flex items-center" aria-label="HUBOT">
-                <img src={hubotBlack.url} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
+                <img src={hubotBlack} alt="HUBOT" className="w-32 md:w-40 h-auto shrink-0 object-contain" />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-gray-700">{"\n"}</p>
             </div>

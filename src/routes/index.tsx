@@ -795,7 +795,7 @@ function Pricing() {
       name: "Pro",
       price: "399",
       desc: "Para times em crescimento",
-      features: ["2 números", "10 atendentes", "Kanban + automações", "Integrações básicas", "Suporte prioritário"],
+      features: ["1 número", "10 atendentes", "Kanban + automações", "Integrações básicas", "Suporte prioritário"],
     },
     {
       name: "Premium",
@@ -803,12 +803,11 @@ function Pricing() {
       desc: "O mais escolhido pelas equipes",
       highlight: true,
       features: [
-        "3 números\u00a0",
+        "1 número\u00a0",
         "30 atendentes",
         "Integração Protheus",
         "IA",
         "Relatórios avançados",
-        "Suporte 24/7",
       ],
     },
     {
